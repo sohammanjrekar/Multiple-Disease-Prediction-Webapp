@@ -110,7 +110,7 @@ if selected == 'heart disease prediction':
     # button
     if st.button("Heart test result"):
         # change the parameters according to the model
-      #  heart_prediction = heart_model.predict([[Pregnancies,Glucose,BloodPressur,SkinThickness,Insulin,BMI, DiabetesPedigreefunction,Age]])
+      #   heart_prediction = heart_model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target]])
 
         if heart_prediction[0] == 1:
                heart_dig = 'The person have heart disease'
@@ -127,35 +127,53 @@ if selected == 'parkison prediction':
    
     col1, col2, col3 = st.columns(3)
     with col1:
-     age = st.text_input("AGE")
+     MDVP = st.text_input("MDVP:Fo(Hz)")
     with col2 :
-     sex =st.text_input("sex")
+     MDVPFIZ =st.text_input("MDVP:Fhi(Hz)")
     with col3:
-     cp=st.text_input("cp value")
+     MDVPFLO=st.text_input("MDVP:Flo(Hz)")
     with col1:
-     trestbps = st.text_input("trestbps value")
+     MDVPJITTER = st.text_input("MDVP:Jitter(%)")
+    with col2:
+     MDVPJitterAbs = st.text_input("MDVP:Jitter(Abs)")
+    with col3:
+     MDVPRAP = st.text_input("MDVP:RAP")
 
     with col2 :
 
-     chol= st.text_input("chol value ")
+     MDVPPPQ= st.text_input("MDVP:PPQ ")
     with col3:
-     fbs = st.text_input("fbs value")
+     JitterDDP = st.text_input("Jitter:DDP")
     with col1 :
-     restecg = st.text_input("restecg value")
+     MDVPShimmer = st.text_input("MDVP:Shimmer")
     with col2 :
-     thalach = st.text_input("thalach value")
+     MDVPShimmer_dB = st.text_input("MDVP:Shimmer(dB)")
     with col3:
-     exang=st.text_input("exang value")
+     Shimmer_APQ3=st.text_input("Shimmer:APQ3")
     with col1 :
-        oldpeak=st.text_input("oldpeak value")
+       ShimmerAPQ5=st.text_input("Shimmer:APQ5")
     with col2 :
-        slope=st.text_input("slope value")
+       MDVP_APQ=st.text_input("MDVP:APQ")
     with col3:
-        ca=st.text_input("ca value")
+       ShimmerDDA=st.text_input("Shimmer:DDA")
     with col1 : 
-        thal = st.text_input("Thal value")
+       NHR = st.text_input("NHR")
     with col2 :
-        traget = st.text_input("Target value")
+        HNR = st.text_input("HNR")
+    with col1 :
+      status=st.text_input("status")
+    with col2 :
+       RPDE=st.text_input("RPDE")
+    with col3:
+       DFA=st.text_input("DFA")
+    with col1 :
+      spread1=st.text_input("spread1")
+    with col2 :
+       spread2=st.text_input("spread2")
+    with col3:
+       D2=st.text_input("D2")
+    with col1:
+        PPE = st.text_input("PPE")
     
 
 
@@ -165,7 +183,7 @@ if selected == 'parkison prediction':
     # button 
     if st.button("Parkinson test result"):
      # change the parameters according to the model
-      #  parkinson_prediction = parkinson_model.predict([[Pregnancies,Glucose,BloodPressur,SkinThickness,Insulin,BMI, DiabetesPedigreefunction,Age]])
+      #  parkinson_prediction = parkinson_model.predict([[MDVP:Fo(Hz),MDVP:Fhi(Hz),MDVP:Flo(Hz),MDVP:Jitter(%),MDVP:Jitter(Abs),MDVP:RAP,MDVP:PPQ,Jitter:DDP,MDVP:Shimmer,MDVP:Shimmer(dB),Shimmer:APQ3,Shimmer:APQ5,MDVP:APQ,Shimmer:DDA,NHR,HNR,status,RPDE,DFA,spread1,spread2,D2,PPE]])
         
         if parkinson_prediction[0]==1 :  
               parkinson_dig ='The person have Parkinson disease'
