@@ -1,0 +1,314 @@
+Disease,Symptom_0,Symptom_1,Symptom_2,Symptom_3,Symptom_4,Symptom_5,Symptom_6,Symptom_7,Symptom_8,Symptom_9,Symptom_10,Symptom_11,Symptom_12,Symptom_13,Symptom_14,Symptom_15,Symptom_16
+AIDS, muscle_wasting, patches_in_throat, high_fever, extra_marital_contacts,null,null,null,null,null,null,null,null,null,null,null,null,null
+AIDS, patches_in_throat, high_fever, extra_marital_contacts,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+AIDS, muscle_wasting, high_fever, extra_marital_contacts,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+AIDS, muscle_wasting, patches_in_throat, extra_marital_contacts,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+AIDS, muscle_wasting, patches_in_throat, high_fever,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Acne, skin_rash, pus_filled_pimples, blackheads, scurrying,null,null,null,null,null,null,null,null,null,null,null,null,null
+Acne, pus_filled_pimples, blackheads, scurrying,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Acne, skin_rash, blackheads, scurrying,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Acne, skin_rash, pus_filled_pimples, scurrying,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Acne, skin_rash, pus_filled_pimples, blackheads,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, swelling_of_stomach, distention_of_abdomen, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, yellowish_skin, abdominal_pain, swelling_of_stomach, distention_of_abdomen, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, abdominal_pain, swelling_of_stomach, distention_of_abdomen, history_of_alcohol_consumption,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, abdominal_pain, swelling_of_stomach, distention_of_abdomen, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, abdominal_pain, swelling_of_stomach, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, abdominal_pain, distention_of_abdomen, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, abdominal_pain, swelling_of_stomach, distention_of_abdomen, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null,null
+Alcoholic hepatitis, vomiting, yellowish_skin, abdominal_pain, swelling_of_stomach, distention_of_abdomen, history_of_alcohol_consumption, fluid_overload,null,null,null,null,null,null,null,null,null,null
+Allergy, shivering, chills, watering_from_eyes,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Allergy, continuous_sneezing, shivering, watering_from_eyes,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Allergy, continuous_sneezing, shivering, chills,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Allergy, continuous_sneezing, shivering, chills,watering_from_eyes,null,null,null,null,null,null,null,null,null,null,null,null,null
+Allergy, continuous_sneezing, chills, watering_from_eyes,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, muscle_weakness, stiff_neck, swelling_joints, movement_stiffness, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, stiff_neck, swelling_joints, movement_stiffness, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, muscle_weakness, swelling_joints, movement_stiffness, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, muscle_weakness, stiff_neck, movement_stiffness, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, muscle_weakness, stiff_neck, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null,null
+Arthritis, muscle_weakness, stiff_neck, swelling_joints, movement_stiffness,null,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, cough, high_fever, breathlessness, family_history, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, cough, breathlessness, family_history, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, cough, high_fever, family_history, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, cough, high_fever, breathlessness, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, cough, high_fever, breathlessness, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, cough, high_fever, breathlessness, family_history, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null,null
+Bronchial Asthma, fatigue, high_fever, breathlessness, family_history, mucoid_sputum,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, back_pain, weakness_in_limbs, neck_pain, dizziness, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, weakness_in_limbs, neck_pain, dizziness, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, back_pain, neck_pain, dizziness, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, back_pain, weakness_in_limbs, dizziness, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, back_pain, weakness_in_limbs, neck_pain, dizziness,null,null,null,null,null,null,null,null,null,null,null,null,null
+Cervical spondylosis, back_pain, weakness_in_limbs, neck_pain, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, high_fever, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, high_fever, headache, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, high_fever, headache, loss_of_appetite, mild_fever, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox, skin_rash, fatigue, lethargy, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, lethargy, high_fever, headache, loss_of_appetite, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, fatigue, lethargy, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, lethargy, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chicken pox,itching, skin_rash, fatigue, high_fever, headache, loss_of_appetite, mild_fever, swelled_lymph_nodes, malaise, red_spots_over_body,null,null,null,null,null,null,null
+Chronic cholestasis, vomiting, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, yellowish_skin, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, yellowish_skin, nausea, loss_of_appetite, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, yellowish_skin, nausea, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, yellowish_skin, nausea, loss_of_appetite, abdominal_pain,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, vomiting, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Chronic cholestasis,itching, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null
+Common Cold, continuous_sneezing, chills, fatigue, cough, high_fever, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, fatigue, cough, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, chills, fatigue, cough, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain
+Common Cold, continuous_sneezing, chills, fatigue, cough, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, chills, fatigue, cough, high_fever, headache, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, chills, fatigue, cough, high_fever, headache, swelled_lymph_nodes, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, chills, fatigue, cough, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, chills, cough, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Common Cold, continuous_sneezing, chills, fatigue, high_fever, headache, swelled_lymph_nodes, malaise, phlegm, throat_irritation, redness_of_eyes, sinus_pressure, runny_nose, congestion, chest_pain, loss_of_smell, muscle_pain,null
+Covid,tiredness, high_fever, loss_of_taste,cough,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid, high_fever, loss_of_taste, cough, tiredness,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid,cough, high_fever, tiredness, loss_of_taste,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid,loss_of_taste, tiredness, high_fever, cough,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid, high_fever, cough, tiredness, loss_of_taste,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid,tiredness, loss_of_smell, high_fever,cough,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid,loss_of_smell, tiredness, high_fever,cough,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid,loss_of_taste, cough, tiredness,high_fever,null,null,null,null,null,null,null,null,null,null,null,null,null
+Covid, high_fever, tiredness, cough, loss_of_taste,null,null,null,null,null,null,null,null,null,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, fatigue, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null
+Dengue, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain, red_spots_over_body,null,null,null,null
+Dengue, skin_rash, chills, joint_pain, vomiting, fatigue, high_fever, headache, nausea, loss_of_appetite, pain_behind_the_eyes, back_pain, malaise, muscle_pain,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , weight_loss, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, lethargy, irregular_sugar_level, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, restlessness, lethargy, irregular_sugar_level, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Diabetes , fatigue, weight_loss, restlessness, lethargy, blurred_and_distorted_vision, obesity, excessive_hunger, increased_appetite, polyuria,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), constipation, pain_during_bowel_movements, pain_in_anal_region, irritation_in_anus,null,null,null,null,null,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), constipation, pain_during_bowel_movements, pain_in_anal_region, bloody_stool, irritation_in_anus,null,null,null,null,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), constipation, pain_during_bowel_movements, bloody_stool, irritation_in_anus,null,null,null,null,null,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), pain_during_bowel_movements, pain_in_anal_region, bloody_stool, irritation_in_anus,null,null,null,null,null,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), constipation, pain_during_bowel_movements, pain_in_anal_region, bloody_stool,null,null,null,null,null,null,null,null,null,null,null,null,null
+Dimorphic hemorrhoids(piles), constipation, pain_in_anal_region, bloody_stool, irritation_in_anus,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction, skin_rash, stomach_pain, burning_micturition, spotting_urination,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction,itching, skin_rash, stomach_pain, burning_micturition,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction,itching, skin_rash, stomach_pain, spotting_urination,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction,itching, skin_rash, burning_micturition, spotting_urination,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction,itching, stomach_pain, burning_micturition, spotting_urination,null,null,null,null,null,null,null,null,null,null,null,null,null
+Drug Reaction,itching, skin_rash, stomach_pain, burning_micturition, spotting_urination,null,null,null,null,null,null,null,null,null,null,null,null
+Fungal infection,itching, skin_rash, nodal_skin_eruptions,dyschromic_patches,null,null,null,null,null,null,null,null,null,null,null,null,null
+Fungal infection,itching, skin_rash, dyschromic_patches,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Fungal infection, skin_rash, nodal_skin_eruptions, dyschromic_patches,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Fungal infection,itching, nodal_skin_eruptions, dyschromic_patches,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Fungal infection,itching, skin_rash, nodal_skin_eruptions,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, acidity, vomiting, cough, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, acidity, ulcers_on_tongue, cough, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, acidity, ulcers_on_tongue, vomiting, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, acidity, ulcers_on_tongue, vomiting, cough,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, acidity, ulcers_on_tongue, vomiting, cough, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, acidity, ulcers_on_tongue, vomiting, cough, chest_pain,null,null,null,null,null,null,null,null,null,null,null
+GERD, stomach_pain, ulcers_on_tongue, vomiting, cough, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null
+Gastroenteritis, vomiting, dehydration, diarrhoea,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Gastroenteritis, vomiting, sunken_eyes, diarrhoea,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Gastroenteritis, vomiting, sunken_eyes, dehydration,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Gastroenteritis, vomiting, sunken_eyes, dehydration, diarrhoea,null,null,null,null,null,null,null,null,null,null,null,null,null
+Gastroenteritis, sunken_eyes, dehydration, diarrhoea,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Heart attack, vomiting, breathlessness, sweating, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null,null
+Heart attack, breathlessness, sweating, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Heart attack, vomiting, breathlessness, sweating,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Heart attack, vomiting, breathlessness, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Heart attack, vomiting, sweating, chest_pain,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, dark_urine, nausea, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, dark_urine, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis A, joint_pain, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, diarrhoea, mild_fever, yellowing_of_eyes, muscle_pain,null,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, yellowish_skin, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, yellowish_skin, dark_urine, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, yellowish_skin, dark_urine, loss_of_appetite, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B,itching, fatigue, lethargy, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null
+Hepatitis B,itching, lethargy, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis B, fatigue, lethargy, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellow_urine, yellowing_of_eyes, malaise, receiving_blood_transfusion, receiving_unsterile_injections,null,null,null,null,null,null
+Hepatitis C, fatigue, yellowish_skin, loss_of_appetite, yellowing_of_eyes, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, fatigue, yellowish_skin, nausea, loss_of_appetite, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, fatigue, yellowish_skin, nausea, loss_of_appetite, yellowing_of_eyes, family_history,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, yellowish_skin, nausea, loss_of_appetite, yellowing_of_eyes, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, fatigue, nausea, loss_of_appetite, yellowing_of_eyes, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, fatigue, yellowish_skin, nausea, yellowing_of_eyes, family_history,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis C, fatigue, yellowish_skin, nausea, loss_of_appetite, yellowing_of_eyes,null,null,null,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain,null,null,null,null,null,null,null,null,null
+Hepatitis D, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, yellowing_of_eyes,null,null,null,null,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null
+Hepatitis E, joint_pain, fatigue, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, high_fever, yellowish_skin, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, joint_pain, vomiting, fatigue, high_fever, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hepatitis E, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, nausea, loss_of_appetite, abdominal_pain, yellowing_of_eyes, acute_liver_failure, coma, stomach_bleeding,null,null,null,null,null
+Hypertension , chest_pain, dizziness, loss_of_balance, lack_of_concentration,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hypertension , headache, chest_pain, dizziness, loss_of_balance, lack_of_concentration,null,null,null,null,null,null,null,null,null,null,null,null
+Hypertension , headache, chest_pain, loss_of_balance, lack_of_concentration,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hypertension , headache, chest_pain, dizziness, lack_of_concentration,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hypertension , headache, chest_pain, dizziness, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hypertension , headache, dizziness, loss_of_balance, lack_of_concentration,null,null,null,null,null,null,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, weight_loss, restlessness, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, restlessness, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, restlessness, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, restlessness, sweating, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, restlessness, sweating, diarrhoea, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, restlessness, sweating, diarrhoea, fast_heart_rate, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hyperthyroidism, fatigue, mood_swings, weight_loss, restlessness, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null
+Hyperthyroidism, mood_swings, weight_loss, restlessness, sweating, diarrhoea, fast_heart_rate, excessive_hunger, muscle_weakness, irritability, abnormal_menstruation,null,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, sweating, headache, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, anxiety, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, fatigue, anxiety, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, sweating, headache, nausea, blurred_and_distorted_vision, excessive_hunger, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, sweating, headache, nausea, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, sweating, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypoglycemia, vomiting, fatigue, anxiety, headache, nausea, blurred_and_distorted_vision, excessive_hunger, drying_and_tingling_lips, slurred_speech, irritability, palpitations,null,null,null,null,null,null
+Hypothyroidism, fatigue, cold_hands_and_feet, mood_swings, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, mood_swings, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, cold_hands_and_feet, mood_swings, lethargy, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, cold_hands_and_feet, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, cold_hands_and_feet, mood_swings, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, cold_hands_and_feet, mood_swings, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null
+Hypothyroidism, weight_gain, cold_hands_and_feet, mood_swings, lethargy, dizziness, puffy_face_and_eyes, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Hypothyroidism, fatigue, weight_gain, cold_hands_and_feet, mood_swings, lethargy, dizziness, enlarged_thyroid, brittle_nails, swollen_extremities, depression, irritability, abnormal_menstruation,null,null,null,null,null
+Impetigo, skin_rash, high_fever, blister, red_sore_around_nose, yellow_crust_ooze,null,null,null,null,null,null,null,null,null,null,null,null
+Impetigo, high_fever, blister, red_sore_around_nose, yellow_crust_ooze,null,null,null,null,null,null,null,null,null,null,null,null,null
+Impetigo, skin_rash, blister, red_sore_around_nose, yellow_crust_ooze,null,null,null,null,null,null,null,null,null,null,null,null,null
+Impetigo, skin_rash, high_fever, red_sore_around_nose, yellow_crust_ooze,null,null,null,null,null,null,null,null,null,null,null,null,null
+Impetigo, skin_rash, high_fever, blister, yellow_crust_ooze,null,null,null,null,null,null,null,null,null,null,null,null,null
+Impetigo, skin_rash, high_fever, blister, red_sore_around_nose,null,null,null,null,null,null,null,null,null,null,null,null,null
+Jaundice, vomiting, fatigue, weight_loss, high_fever, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, weight_loss, high_fever, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, high_fever, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, weight_loss, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, weight_loss, high_fever, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, weight_loss, high_fever, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, weight_loss, high_fever, yellowish_skin, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, vomiting, fatigue, weight_loss, high_fever, yellowish_skin, dark_urine,null,null,null,null,null,null,null,null,null,null
+Jaundice,itching, fatigue, weight_loss, high_fever, yellowish_skin, dark_urine, abdominal_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, high_fever, sweating, headache, nausea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, high_fever, sweating, headache, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null
+Malaria, vomiting, high_fever, sweating, headache, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, high_fever, headache, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, high_fever, sweating, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, high_fever, sweating, headache, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, high_fever, sweating, headache, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Malaria, chills, vomiting, sweating, headache, nausea, diarrhoea, muscle_pain,null,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, excessive_hunger, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, irritability,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, depression, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, stiff_neck, depression, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Migraine, acidity, indigestion, headache, blurred_and_distorted_vision, excessive_hunger, stiff_neck, irritability, visual_disturbances,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, neck_pain, knee_pain, hip_joint_pain, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, neck_pain, knee_pain, hip_joint_pain, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, knee_pain, hip_joint_pain, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, neck_pain, hip_joint_pain, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, neck_pain, knee_pain, swelling_joints, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, neck_pain, knee_pain, hip_joint_pain, painful_walking,null,null,null,null,null,null,null,null,null,null,null,null
+Osteoarthritis, joint_pain, neck_pain, knee_pain, hip_joint_pain, swelling_joints,null,null,null,null,null,null,null,null,null,null,null,null
+Paralysis (brain hemorrhage), vomiting, weakness_of_one_body_side, altered_sensorium,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Paralysis (brain hemorrhage), vomiting, headache, altered_sensorium,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Paralysis (brain hemorrhage), vomiting, headache, weakness_of_one_body_side,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Paralysis (brain hemorrhage), headache, weakness_of_one_body_side, altered_sensorium,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Paralysis (brain hemorrhage), vomiting, headache, weakness_of_one_body_side, altered_sensorium,null,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, headache, nausea, spinning_movements, loss_of_balance, unsteadiness,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, headache, nausea, spinning_movements, loss_of_balance,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, headache, nausea, spinning_movements, unsteadiness,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, headache, nausea, spinning_movements, loss_of_balance, unsteadiness,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, nausea, spinning_movements, loss_of_balance, unsteadiness,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, headache, spinning_movements, loss_of_balance, unsteadiness,null,null,null,null,null,null,null,null,null,null,null,null
+Paroxysmal Positional Vertigo, vomiting, headache, nausea, loss_of_balance, unsteadiness,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, indigestion, loss_of_appetite, abdominal_pain, passage_of_gases, internal_itching,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, indigestion, loss_of_appetite, abdominal_pain, passage_of_gases,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, indigestion, loss_of_appetite, abdominal_pain, internal_itching,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, indigestion, loss_of_appetite, passage_of_gases, internal_itching,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, indigestion, loss_of_appetite, abdominal_pain, passage_of_gases, internal_itching,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, indigestion, abdominal_pain, passage_of_gases, internal_itching,null,null,null,null,null,null,null,null,null,null,null,null
+Peptic ulcer disease, vomiting, loss_of_appetite, abdominal_pain, passage_of_gases, internal_itching,null,null,null,null,null,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, high_fever, breathlessness, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, high_fever, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, breathlessness, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, high_fever, breathlessness, sweating, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, high_fever, breathlessness, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, fatigue, cough, high_fever, breathlessness, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, high_fever, breathlessness, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null
+Pneumonia, chills, fatigue, cough, high_fever, breathlessness, sweating, malaise, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Pneumonia, chills, cough, high_fever, breathlessness, sweating, malaise, phlegm, chest_pain, fast_heart_rate, rusty_sputum,null,null,null,null,null,null,null
+Psoriasis, skin_rash, joint_pain, skin_peeling, small_dents_in_nails, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, skin_rash, skin_peeling, silver_like_dusting, small_dents_in_nails, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, joint_pain, skin_peeling, silver_like_dusting, small_dents_in_nails, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, skin_rash, joint_pain, skin_peeling, silver_like_dusting, small_dents_in_nails, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, skin_rash, joint_pain, skin_peeling, silver_like_dusting, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, skin_rash, joint_pain, skin_peeling, silver_like_dusting, small_dents_in_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Psoriasis, skin_rash, joint_pain, silver_like_dusting, small_dents_in_nails, inflammatory_nails,null,null,null,null,null,null,null,null,null,null,null,null
+Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null
+Tuberculosis, chills, vomiting, fatigue, weight_loss, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, vomiting, fatigue, weight_loss, cough, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, fatigue, weight_loss, cough, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, vomiting, weight_loss, cough, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, vomiting, fatigue, cough, high_fever, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, high_fever, breathlessness, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, high_fever, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Tuberculosis, chills, vomiting, fatigue, weight_loss, cough, breathlessness, sweating, loss_of_appetite, mild_fever, yellowing_of_eyes, swelled_lymph_nodes, malaise, phlegm, chest_pain, blood_in_sputum,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus),null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, abdominal_pain, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null
+Typhoid, chills, vomiting, fatigue, high_fever, headache, nausea, constipation, diarrhoea, toxic_look_(typhus), belly_pain,null,null,null,null,null,null,null
+Urinary tract infection, burning_micturition, bladder_discomfort, foul_smell_of urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null
+Urinary tract infection, bladder_discomfort, foul_smell_of urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Urinary tract infection, burning_micturition, foul_smell_of urine, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Urinary tract infection, burning_micturition, bladder_discomfort, continuous_feel_of_urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Urinary tract infection, burning_micturition, bladder_discomfort, foul_smell_of urine,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, bruising, obesity, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, obesity, swollen_legs, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, bruising, obesity, swollen_legs, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, cramps, bruising, obesity, swollen_legs, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, bruising, obesity, swollen_legs, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, bruising, obesity, swollen_legs, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, bruising, swollen_legs, swollen_blood_vessels, prominent_veins_on_calf,null,null,null,null,null,null,null,null,null,null,null
+Varicose veins, fatigue, cramps, bruising, obesity, swollen_legs, swollen_blood_vessels,null,null,null,null,null,null,null,null,null,null,null
