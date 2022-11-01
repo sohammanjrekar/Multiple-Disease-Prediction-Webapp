@@ -14,19 +14,7 @@ from code.DiseaseModel import DiseaseModel
 from code.helper import prepare_symptoms_array
 import seaborn as sns
 import matplotlib.pyplot as plt
-# import hydralit_components as hc
 
-# menu_data = [
-#     {'label':"Left End"},
-#     {'label':"Book"},
-#     {'label':"Component"},
-#     {'label':"Dashboard"},
-#     {'label':"Right End"},
-# ]
-
-# menu_id = hc.nav_bar(menu_definition=menu_data)
-
-# st.info(f"{menu_id=}")
 
 # loading the models
 diabetes_model = pickle.load(open("../models/diabetes_model.sav", "rb"))
@@ -42,16 +30,16 @@ hepatitis_model=pickle.load(open("../models/hepatitis.sav", "rb"))
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction', [
         'Disease Prediction',
-        'diabetes prediction',
-        'heart disease prediction',
-        'parkison prediction',
+        'Diabetes prediction',
+        'Heart disease prediction',
+        'Parkison prediction',
         'Liver prediction',
-        'jaundice prediction',
-        'hepatitis prediction',
+        'Jaundice prediction',
+        'Hepatitis prediction',
         'Dashboard',
         'Blogs'
     ],
-        icons=['','activity', 'heart', 'person','person','person','person','list-task'],
+        icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
 
 
@@ -63,7 +51,7 @@ with st.sidebar:
 
 
 # Diabetes prediction page
-if selected == 'diabetes prediction':  # pagetitle
+if selected == 'Diabetes prediction':  # pagetitle
     st.title("Diabetes disease prediction")
     image = Image.open('d3.jpg')
     st.image(image, caption='diabetes disease prediction')
@@ -113,8 +101,8 @@ if selected == 'diabetes prediction':  # pagetitle
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(diabetes_dig)
-
-if selected == 'heart disease prediction':
+# Heart prediction page
+if selected == 'Heart disease prediction':
     st.title("Heart disease prediction")
     image = Image.open('heart2.jpg')
     st.image(image, caption='heart failuire')
@@ -166,18 +154,23 @@ if selected == 'heart disease prediction':
         heart_prediction = heart_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
 
         if heart_prediction[0] == 1:
-            heart_dig = 'The person have heart disease'
+            heart_dig = 'The person have Heart Disease.'
             image = Image.open('positive.jpg')
             st.image(image, caption='')
             
         else:
-            heart_dig = 'THe person does not have heart disease'
+            heart_dig = 'The person does not have Heart Disease'
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(heart_dig)
 
 
-if selected == 'parkison prediction':
+
+
+
+
+
+if selected == 'Parkison prediction':
     st.title("Parkison prediction")
     image = Image.open('p1.jpg')
     st.image(image, caption='parkinsons disease')
@@ -259,7 +252,7 @@ if selected == 'parkison prediction':
 if selected == 'Liver prediction':  # pagetitle
     st.title("Liver disease prediction")
     image = Image.open('liver.jpg')
-    st.image(image, caption='Liver disease prediction')
+    st.image(image, caption='Liver disease prediction.')
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
@@ -296,19 +289,19 @@ if selected == 'Liver prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if liver_prediction[0] == 1:
-            liver_dig = 'The person is Diabetic'
+            liver_dig = 'The person have liver disease.'
         else:
-            liver_dig = 'THe person is not Diabetic'
+            liver_dig = 'The person does not have liver disease.'
         st.success(liver_dig)
 
 
 
 
 # hepatitis prediction page
-if selected == 'hepatitis prediction':  # pagetitle
-    st.title("hepatitis disease prediction")
+if selected == 'Hepatitis prediction':  # pagetitle
+    st.title("Hepatitis disease prediction")
     image = Image.open('h.png')
-    st.image(image, caption='hepatitis disease prediction')
+    st.image(image, caption='Hepatitis disease prediction')
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
@@ -344,11 +337,11 @@ if selected == 'hepatitis prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if hepatitis_prediction[0] == 1:
-            hepatitis_dig = 'The person is Diabetic'
+            hepatitis_dig = 'The person is Hepatitic.'
             image = Image.open('positive.jpg')
             st.image(image, caption='')
         else:
-            hepatitis_dig = 'THe person is not Diabetic'
+            hepatitis_dig = 'THe person is not Hepatitic.'
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(hepatitis_dig)
@@ -361,10 +354,10 @@ if selected == 'hepatitis prediction':  # pagetitle
 
 
 # jaundice prediction page
-if selected == 'jaundice prediction':  # pagetitle
-    st.title("jaundice disease prediction")
+if selected == 'Jaundice prediction':  # pagetitle
+    st.title("Jaundice disease prediction")
     image = Image.open('j.jpg')
-    st.image(image, caption='Liver disease prediction')
+    st.image(image, caption='Jaundice disease prediction')
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
@@ -398,9 +391,9 @@ if selected == 'jaundice prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if jaundice_prediction[0] == 1:
-            jaundice_dig = 'The person is Diabetic'
+            jaundice_dig = 'The person have Jaundice.'
         else:
-            jaundice_dig = 'THe person is not Diabetic'
+            jaundice_dig = 'The person does not have Jaundice.'
         st.success(jaundice_dig)
 
 
@@ -461,10 +454,10 @@ if selected == 'Dashboard':  # pagetitle
     
     
     
-    select = st.selectbox('Select disease', ['Diabetes', 'heart', 'parkinsons','Liver','jaundice','hepatitis'],key='2')
+    select = st.selectbox('Select disease', ['Diabetes', 'Heart', 'Parkinsons','Liver','Jaundice','Hepatitis'],key='2')
     st.title("Data visualization")
     if select=='Diabetes':
-        select = st.selectbox('Select disease', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
+        select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
         for i in ['Pregnancies'	,'Glucose',	'BloodPressure',	'SkinThickness','Insulin',	'BMI',	'DiabetesPedigreeFunction',	'Age']:
             if select=='Line Plot':
                 fig = plt.figure(figsize=(10, 4))
@@ -480,7 +473,7 @@ if selected == 'Dashboard':  # pagetitle
                 st.pyplot(fig) 
             if select=='count plot':
                 fig = plt.figure(figsize=(10, 4))
-                sns.countplot(x = diabetes_data[i], y = diabetes_data['Outcome'])
+                sns.countplot(x = diabetes_data[i])
                 st.pyplot(fig)
         if select=='heatmap plot':
             fig, ax = plt.subplots()
@@ -489,8 +482,8 @@ if selected == 'Dashboard':  # pagetitle
             
             
             
-    if select=='heart':
-        select = st.selectbox('Select disease', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
+    if select=='Heart':
+        select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
         for i in ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal']:
             if select=='Line Plot':
                 fig = plt.figure(figsize=(10, 4))
@@ -506,15 +499,15 @@ if selected == 'Dashboard':  # pagetitle
                 st.pyplot(fig) 
             if select=='count plot':
                 fig = plt.figure(figsize=(10, 4))
-                sns.countplot(x =  heart_data[i], y =  heart_data['target'])
+                sns.countplot(x =  heart_data[i])
                 st.pyplot(fig)
         if select=='heatmap plot':
             fig, ax = plt.subplots()
             sns.heatmap(heart_data.corr(), ax=ax)
             st.write(fig)      
         
-    if select=='parkinsons':
-        select = st.selectbox('Select disease',['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3') 
+    if select=='Parkinsons':
+        select = st.selectbox('Select Data visulization ',['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3') 
         for i in ['MDVP:Fo(Hz)','MDVP:Fhi(Hz)','MDVP:Flo(Hz)','MDVP:Jitter(%)','MDVP:Jitter(Abs)','MDVP:RAP','MDVP:PPQ','Jitter:DDP','MDVP:Shimmer','MDVP:Shimmer(dB)','Shimmer:APQ3','Shimmer:APQ5','MDVP:APQ','Shimmer:DDA','NHR','HNR','RPDE','DFA','spread1','spread2','D2','PPE']:
             if select=='Line Plot':
                 fig = plt.figure(figsize=(10, 4))
@@ -530,7 +523,7 @@ if selected == 'Dashboard':  # pagetitle
                 st.pyplot(fig) 
             if select=='count plot':
                 fig = plt.figure(figsize=(10, 4))
-                sns.countplot(x = parkinsons_data[i], y = parkinsons_data['status'])
+                sns.countplot(x = parkinsons_data[i])
                 st.pyplot(fig)
         if select=='heatmap plot':
             fig, ax = plt.subplots()
@@ -539,13 +532,119 @@ if selected == 'Dashboard':  # pagetitle
                         
                         
                         
-                        
-            # st.bar_chart([diabetes_data['Outcome'],diabetes_data[i]])
-            # st.line_chart([diabetes_data['Outcome'],diabetes_data[i]])
-            # st.area_chart([diabetes_data['Outcome'],diabetes_data[i]])
-            # fig = plt.figure(figsize=(10, 4))
-            # sns.lineplot(x = diabetes_data[i], y = diabetes_data['Outcome'])
-            # st.pyplot(fig)
+    
+
+    if select=='Liver':
+        select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
+        for i in ['Age','Sex','Total_Bilirubin',
+ 'Direct_Bilirubin',
+ 'Alkaline_Phosphotase',
+ 'Alamine_Aminotransferase',
+ 'Aspartate_Aminotransferase',
+ 'Total_Protiens',
+ 'Albumin',
+ 'Albumin_and_Globulin_Ratio']:
+            if select=='Line Plot':
+                fig = plt.figure(figsize=(10, 4))
+                sns.lineplot(x = liver_data[i], y = liver_data['Result'])
+                st.pyplot(fig)
+            if select=='Violin Plot':
+                fig = plt.figure(figsize=(10, 4))
+                sns.violinplot(x = liver_data[i], y = liver_data['Result'])
+                st.pyplot(fig) 
+            if select=='Strip Plot':
+                fig = plt.figure(figsize=(10, 4))
+                sns.stripplot(x = liver_data[i], y = liver_data['Result'])
+            if select=='count plot':
+                fig = plt.figure(figsize=(10, 4))
+                sns.countplot(x = liver_data[i])
+                st.pyplot(fig)
+        if select=='heatmap plot':
+            fig, ax = plt.subplots()
+            sns.heatmap(liver_data.corr(), ax=ax)
+            st.write(fig)
+
+    if select=='Jaundice':
+            select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
+            for i in ['AGE',
+ 'GENDER',
+ 'Total_Bilirubin',
+ 'Direct_Bilirubin',
+ 'Alkaline_Phosphotase',
+ 'Alamine_Aminotransferase',
+ 'Total_Protiens',
+ 'Albumin',
+ ]:
+                if select=='Line Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.lineplot(x =  jaundice_data[i], y =  jaundice_data['jaundice'])
+                    st.pyplot(fig)
+                if select=='Violin Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.violinplot(x =  jaundice_data[i], y =  jaundice_data['jaundice'])
+                    st.pyplot(fig) 
+                if select=='Strip Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.stripplot(x =  jaundice_data[i], y =  jaundice_data['jaundice'])
+                    st.pyplot(fig) 
+                if select=='count plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.countplot(x =  jaundice_data[i])
+                    st.pyplot(fig)
+            if select=='heatmap plot':
+                fig, ax = plt.subplots()
+                sns.heatmap(jaundice_data.corr(), ax=ax)
+                st.write(fig)
+
+
+
+
+
+    if select=='Hepatitis':
+            select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
+            for i in ['AGE',
+    'GENDER',
+    'TOTAL_BILIRUBIN',
+    'DIRECT_BILIRUBIN',
+    'ALKALINE_PHOSPHOTASE',
+    'ALAMINE_AMINOTRANSFERASE',
+    'ASPARTATE_AMINOTRANSFERASE',
+    'TOTAL_PROTEINS',
+    'ALBUMIN',
+    'ALBUMIN_AND_GLOBULIN_RATIO',
+    ]:
+                if select=='Line Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.lineplot(x = hepatities_data[i], y = hepatities_data['DATASET'])
+                    st.pyplot(fig)
+                if select=='Violin Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.violinplot(x = hepatities_data[i], y = hepatities_data['DATASET'])
+                    st.pyplot(fig) 
+                if select=='Strip Plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.stripplot(x =hepatities_data[i], y = hepatities_data['DATASET'])
+                    st.pyplot(fig) 
+                if select=='count plot':
+                    fig = plt.figure(figsize=(10, 4))
+                    sns.countplot(x = hepatities_data[i])
+                    st.pyplot(fig)
+            if select=='heatmap plot':
+                fig, ax = plt.subplots()
+                sns.heatmap(hepatities_data.corr(), ax=ax)
+                st.write(fig)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
