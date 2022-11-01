@@ -44,12 +44,6 @@ with st.sidebar:
 
 
 
-
-
-
-
-
-
 # Diabetes prediction page
 if selected == 'Diabetes prediction':  # pagetitle
     st.title("Diabetes disease prediction")
@@ -101,6 +95,9 @@ if selected == 'Diabetes prediction':  # pagetitle
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(diabetes_dig)
+        
+        
+        
 # Heart prediction page
 if selected == 'Heart disease prediction':
     st.title("Heart disease prediction")
@@ -289,8 +286,12 @@ if selected == 'Liver prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if liver_prediction[0] == 1:
+            image = Image.open('positive.jpg')
+            st.image(image, caption='')
             liver_dig = 'The person have liver disease.'
         else:
+            image = Image.open('negative.jpg')
+            st.image(image, caption='')
             liver_dig = 'The person does not have liver disease.'
         st.success(liver_dig)
 
@@ -391,8 +392,12 @@ if selected == 'Jaundice prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if jaundice_prediction[0] == 1:
+            image = Image.open('positive.jpg')
+            st.image(image, caption='')
             jaundice_dig = 'The person have Jaundice.'
         else:
+            image = Image.open('negative.jpg')
+            st.image(image, caption='')
             jaundice_dig = 'The person does not have Jaundice.'
         st.success(jaundice_dig)
 
@@ -429,12 +434,6 @@ if selected == 'Disease Prediction':
             precautions = disease_model.predicted_disease_precautions()
             for i in range(4):
                 st.write(f'{i+1}. {precautions[i]}')
-
-
-
-
-
-
 
 
 
@@ -833,7 +832,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-                
-            
-            
-           
