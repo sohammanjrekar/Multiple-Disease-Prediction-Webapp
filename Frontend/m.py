@@ -51,7 +51,7 @@ if selected == 'Diabetes prediction':  # pagetitle
     st.image(image, caption='diabetes disease prediction')
     # columns
     # no inputs from the user
-
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
 
     with col1:
@@ -87,15 +87,14 @@ if selected == 'Diabetes prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if diabetes_prediction[0] == 1:
-            diabetes_dig = 'The person is Diabetic'
+            diabetes_dig = "we are really sorry to say but it seems like you are Diabetic."
             image = Image.open('positive.jpg')
             st.image(image, caption='')
         else:
-            diabetes_dig = 'THe person is not Diabetic'
+            diabetes_dig = 'Congratulation,You are not diabetic'
             image = Image.open('negative.jpg')
             st.image(image, caption='')
-        st.success(diabetes_dig)
-        
+        st.success(name+' , ' + diabetes_dig)
         
         
 # Heart prediction page
@@ -106,37 +105,92 @@ if selected == 'Heart disease prediction':
     # age	sex	cp	trestbps	chol	fbs	restecg	thalach	exang	oldpeak	slope	ca	thal	target
     # columns
     # no inputs from the user
-
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        age = st.number_input("AGE")
+        age = st.number_input("Age")
     with col2:
-        sex = st.number_input("sex")
+        sex=0
+        display = ("male", "female")
+        options = list(range(len(display)))
+        value = st.selectbox("Gender", options, format_func=lambda x: display[x])
+        if value == "male":
+            sex = 1
+        elif value == "female":
+            sex = 0
     with col3:
-        cp = st.number_input("cp value")
+        cp=0
+        display = ("typical angina","atypical angina","non — anginal pain","asymptotic")
+        options = list(range(len(display)))
+        value = st.selectbox("Chest_Pain Type", options, format_func=lambda x: display[x])
+        if value == "typical angina":
+            cp = 0
+        elif value == "atypical angina":
+            cp = 1
+        elif value == "non — anginal pain":
+            cp = 2
+        elif value == "asymptotic":
+            cp = 3
     with col1:
-        trestbps = st.number_input("trestbps value")
+        trestbps = st.number_input("Resting Blood Pressure")
 
     with col2:
 
-        chol = st.number_input("chol value ")
+        chol = st.number_input("Serum Cholestrol")
     with col3:
-        fbs = st.number_input("fbs value")
+        agree = st.checkbox('fasting blood sugar > 120mg/dl')
+        if agree:
+            fbs = 1
+        else:
+            fbs=0
     with col1:
-        restecg = st.number_input("restecg value")
+        restecg=0
+        display = ("normal","having ST-T wave abnormality","left ventricular hyperthrophy")
+        options = list(range(len(display)))
+        value = st.selectbox("Resting ECG", options, format_func=lambda x: display[x])
+        if value == "normal":
+            restecg = 0
+        elif value == "having ST-T wave abnormality":
+            restecg = 1
+        elif value == "left ventricular hyperthrophy":
+            restecg = 2
+
     with col2:
-        thalach = st.number_input("thalach value")
+        exang=0
+        thalach = st.number_input("Max Heart Rate Achieved")
     with col3:
-        exang = st.number_input("exang value")
+        agree = st.checkbox('Exercise induced angina')
+        if agree:
+            exang = 1
+        else:
+            exang=0
     with col1:
-        oldpeak = st.number_input("oldpeak value")
+        oldpeak = st.number_input("ST depression induced by exercise relative to rest")
     with col2:
-        slope = st.number_input("slope value")
+        slope=0
+        display = ("upsloping","flat","downsloping")
+        options = list(range(len(display)))
+        value = st.selectbox("Peak exercise ST segment", options, format_func=lambda x: display[x])
+        if value == "upsloping":
+            slope = 0
+        elif value == "flat":
+            slope = 1
+        elif value == "downsloping":
+            slope = 2
     with col3:
-        ca = st.number_input("ca value")
+        ca = st.number_input("Number of major vessels (0–3) colored by flourosopy")
     with col1:
-        thal = st.number_input("Thal value")
+        thal=0
+        display = ("normal","fixed defect","reversible defect")
+        options = list(range(len(display)))
+        value = st.selectbox("thalassemia", options, format_func=lambda x: display[x])
+        if value == "normal":
+            thal = 0
+        elif value == "fixed defect":
+            thal = 1
+        elif value == "reversible defect":
+            thal = 2
 
     # code for prediction
     heart_dig = ''
@@ -151,15 +205,15 @@ if selected == 'Heart disease prediction':
         heart_prediction = heart_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
 
         if heart_prediction[0] == 1:
-            heart_dig = 'The person have Heart Disease.'
+            heart_dig = 'we are really sorry to say but it seems like you have Heart Disease.'
             image = Image.open('positive.jpg')
             st.image(image, caption='')
             
         else:
-            heart_dig = 'The person does not have Heart Disease'
+            heart_dig = "Congratulation , You don't have Heart Disease."
             image = Image.open('negative.jpg')
             st.image(image, caption='')
-        st.success(heart_dig)
+        st.success(name +' , ' + heart_dig)
 
 
 
@@ -174,7 +228,7 @@ if selected == 'Parkison prediction':
   # parameters
 #    name	MDVP:Fo(Hz)	MDVP:Fhi(Hz)	MDVP:Flo(Hz)	MDVP:Jitter(%)	MDVP:Jitter(Abs)	MDVP:RAP	MDVP:PPQ	Jitter:DDP	MDVP:Shimmer	MDVP:Shimmer(dB)	Shimmer:APQ3	Shimmer:APQ5	MDVP:APQ	Shimmer:DDA	NHR	HNR	status	RPDE	DFA	spread1	spread2	D2	PPE
    # change the variables according to the dataset used in the model
-
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
     with col1:
         MDVP = st.number_input("MDVP:Fo(Hz)")
@@ -231,18 +285,17 @@ if selected == 'Parkison prediction':
     if st.button("Parkinson test result"):
         parkinson_prediction=[[]]
         # change the parameters according to the model
-        parkinson_prediction = parkinson_model.predict([[MDVP, MDVPFIZ, MDVPFLO, MDVPJITTER, MDVPJitterAbs, MDVPRAP, MDVPPPQ, JitterDDP, MDVPShimmer,
-                                                   MDVPShimmer_dB, Shimmer_APQ3, ShimmerAPQ5, MDVP_APQ, ShimmerDDA, NHR, HNR,  RPDE, DFA, spread1, spread2, D2, PPE]])
+        parkinson_prediction = parkinson_model.predict([[MDVP, MDVPFIZ, MDVPFLO, MDVPJITTER, MDVPJitterAbs, MDVPRAP, MDVPPPQ, JitterDDP, MDVPShimmer,MDVPShimmer_dB, Shimmer_APQ3, ShimmerAPQ5, MDVP_APQ, ShimmerDDA, NHR, HNR,  RPDE, DFA, spread1, spread2, D2, PPE]])
 
-    if parkinson_prediction[0] == 1:
-        parkinson_dig = 'The person have Parkinson disease'
-        image = Image.open('positive.jpg')
-        st.image(image, caption='')
-    else:
-        parkinson_dig = 'THe person does not have Parkinson disease'
-        image = Image.open('negative.jpg')
-        st.image(image, caption='')
-    st.success(parkinson_dig)
+        if parkinson_prediction[0] == 1:
+            parkinson_dig = 'we are really sorry to say but it seems like you have Parkinson disease'
+            image = Image.open('positive.jpg')
+            st.image(image, caption='')
+        else:
+            parkinson_dig = "Congratulation , You don't have Parkinson disease"
+            image = Image.open('negative.jpg')
+            st.image(image, caption='')
+        st.success(name+' , ' + parkinson_dig)
 
 
 # Liver prediction page
@@ -253,29 +306,37 @@ if selected == 'Liver prediction':  # pagetitle
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        Sex = st.number_input("Entre your Sex (male = 1 and female = 2)")  # 1
+        Sex=0
+        display = ("male", "female")
+        options = list(range(len(display)))
+        value = st.selectbox("Gender", options, format_func=lambda x: display[x])
+        if value == "male":
+            Sex = 0
+        elif value == "female":
+            Sex = 1
     with col2:
-        age = st.number_input("Entre your age   ") # 2 
+        age = st.number_input("Entre your age") # 2 
     with col3:
-        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin >  ") # 3
+        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin") # 3
     with col1:
-        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin >  ")# 4
+        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin")# 4
 
     with col2:
-        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase >  ") # 5
+        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase") # 5
     with col3:
-        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase >  ") # 6
+        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase") # 6
     with col1:
-        Aspartate_Aminotransferase = st.number_input("Entre your Aspartate_Aminotransferase >  ") # 7
+        Aspartate_Aminotransferase = st.number_input("Entre your Aspartate_Aminotransferase") # 7
     with col2:
-        Total_Protiens = st.number_input("Entre your Total_Protiens >  ")# 8
+        Total_Protiens = st.number_input("Entre your Total_Protiens")# 8
     with col3:
-        Albumin = st.number_input("Entre your Albumin >  ") # 9
+        Albumin = st.number_input("Entre your Albumin") # 9
     with col1:
-        Albumin_and_Globulin_Ratio = st.number_input("Entre your Albumin_and_Globulin_Ratio >  ") # 10 
+        Albumin_and_Globulin_Ratio = st.number_input("Entre your Albumin_and_Globulin_Ratio") # 10 
     # code for prediction
     liver_dig = ''
 
@@ -288,12 +349,12 @@ if selected == 'Liver prediction':  # pagetitle
         if liver_prediction[0] == 1:
             image = Image.open('positive.jpg')
             st.image(image, caption='')
-            liver_dig = 'The person have liver disease.'
+            liver_dig = "we are really sorry to say but it seems like you have liver disease."
         else:
             image = Image.open('negative.jpg')
             st.image(image, caption='')
-            liver_dig = 'The person does not have liver disease.'
-        st.success(liver_dig)
+            liver_dig = "Congratulation , You don't have liver disease."
+        st.success(name+' , ' + liver_dig)
 
 
 
@@ -306,11 +367,19 @@ if selected == 'Hepatitis prediction':  # pagetitle
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
     with col1:
         age = st.number_input("Entre your age   ") # 2 
     with col2:
-        sex = st.number_input("Entre your gender   ") # 2
+        sex=0
+        display = ("male", "female")
+        options = list(range(len(display)))
+        value = st.selectbox("Gender", options, format_func=lambda x: display[x])
+        if value == "male":
+            sex = 0
+        elif value == "female":
+            sex = 1
     with col3:
         Total_Bilirubin = st.number_input("Entre your Total_Bilirubin >  ") # 3
     with col1:
@@ -338,14 +407,14 @@ if selected == 'Hepatitis prediction':  # pagetitle
 
         # after the prediction is done if the value in the list at index is 0 is 1 then the person is diabetic
         if hepatitis_prediction[0] == 1:
-            hepatitis_dig = 'The person is Hepatitic.'
+            hepatitis_dig = "we are really sorry to say but it seems like you are Hepatitic."
             image = Image.open('positive.jpg')
             st.image(image, caption='')
         else:
-            hepatitis_dig = 'THe person is not Hepatitic.'
+            hepatitis_dig = 'Congratulation,You are not Hepatitic.'
             image = Image.open('negative.jpg')
             st.image(image, caption='')
-        st.success(hepatitis_dig)
+        st.success(name+' , ' + hepatitis_dig)
 
 
 
@@ -362,26 +431,33 @@ if selected == 'Jaundice prediction':  # pagetitle
     # columns
     # no inputs from the user
 # st.write(info.astype(int).info())
+    name = st.text_input("Name:")
     col1, col2, col3 = st.columns(3)
 
     with col1:
         age = st.number_input("Entre your age   ") # 2 
     with col2:
-        
-        Sex = st.number_input("Entre your Sex (male = 1 and female = 2)")  # 1
+        Sex=0
+        display = ("male", "female")
+        options = list(range(len(display)))
+        value = st.selectbox("Gender", options, format_func=lambda x: display[x])
+        if value == "male":
+            Sex = 0
+        elif value == "female":
+            Sex = 1
     with col3:
-        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin >  ") # 3
+        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin") # 3
     with col1:
-        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin >  ")# 4
+        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin")# 4
 
     with col2:
-        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase >  ") # 5
+        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase") # 5
     with col3:
-        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase >  ") # 6
+        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase") # 6
     with col1:
-        Total_Protiens = st.number_input("Entre your Total_Protiens >  ")# 8
+        Total_Protiens = st.number_input("Entre your Total_Protiens")# 8
     with col2:
-        Albumin = st.number_input("Entre your Albumin >  ") # 9 
+        Albumin = st.number_input("Entre your Albumin") # 9 
     # code for prediction
     jaundice_dig = ''
 
@@ -394,12 +470,12 @@ if selected == 'Jaundice prediction':  # pagetitle
         if jaundice_prediction[0] == 1:
             image = Image.open('positive.jpg')
             st.image(image, caption='')
-            jaundice_dig = 'The person have Jaundice.'
+            jaundice_dig = "we are really sorry to say but it seems like you have Jaundice."
         else:
             image = Image.open('negative.jpg')
             st.image(image, caption='')
-            jaundice_dig = 'The person does not have Jaundice.'
-        st.success(jaundice_dig)
+            jaundice_dig = "Congratulation , You don't have Jaundice."
+        st.success(name+' , ' + jaundice_dig)
 
 
 
@@ -455,6 +531,9 @@ if selected == 'Dashboard':  # pagetitle
     
     select = st.selectbox('Select disease', ['Diabetes', 'Heart', 'Parkinsons','Liver','Jaundice','Hepatitis'],key='2')
     st.title("Data visualization")
+    
+    
+    
     if select=='Diabetes':
         select = st.selectbox('Select Data visulization ', ['Line Plot', 'Violin Plot', 'Strip Plot','count plot','heatmap plot'],key='3')
         for i in ['Pregnancies'	,'Glucose',	'BloodPressure',	'SkinThickness','Insulin',	'BMI',	'DiabetesPedigreeFunction',	'Age']:
@@ -655,7 +734,7 @@ if selected == 'Dashboard':  # pagetitle
 import sqlite3
 import pandas as pd
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-
+import nlp
 
 conn = sqlite3.connect("data.db")
 c = conn.cursor()
