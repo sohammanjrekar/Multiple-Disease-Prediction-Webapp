@@ -138,13 +138,8 @@ if selected == 'Heart disease prediction':
     with col2:
 
         chol = st.number_input("Serum Cholestrol")
+    
     with col3:
-        agree = st.checkbox('fasting blood sugar > 120mg/dl')
-        if agree:
-            fbs = 1
-        else:
-            fbs=0
-    with col1:
         restecg=0
         display = ("normal","having ST-T wave abnormality","left ventricular hyperthrophy")
         options = list(range(len(display)))
@@ -156,18 +151,13 @@ if selected == 'Heart disease prediction':
         elif value == "left ventricular hyperthrophy":
             restecg = 2
 
-    with col2:
+    with col1:
         exang=0
         thalach = st.number_input("Max Heart Rate Achieved")
-    with col3:
-        agree = st.checkbox('Exercise induced angina')
-        if agree:
-            exang = 1
-        else:
-            exang=0
-    with col1:
-        oldpeak = st.number_input("ST depression induced by exercise relative to rest")
+   
     with col2:
+        oldpeak = st.number_input("ST depression induced by exercise relative to rest")
+    with col3:
         slope=0
         display = ("upsloping","flat","downsloping")
         options = list(range(len(display)))
@@ -178,9 +168,9 @@ if selected == 'Heart disease prediction':
             slope = 1
         elif value == "downsloping":
             slope = 2
-    with col3:
-        ca = st.number_input("Number of major vessels (0–3) colored by flourosopy")
     with col1:
+        ca = st.number_input("Number of major vessels (0–3) colored by flourosopy")
+    with col2:
         thal=0
         display = ("normal","fixed defect","reversible defect")
         options = list(range(len(display)))
@@ -191,7 +181,18 @@ if selected == 'Heart disease prediction':
             thal = 1
         elif value == "reversible defect":
             thal = 2
-
+    with col3:
+        agree = st.checkbox('Exercise induced angina')
+        if agree:
+            exang = 1
+        else:
+            exang=0
+    with col1:
+        agree1 = st.checkbox('fasting blood sugar > 120mg/dl')
+        if agree1:
+            fbs = 1
+        else:
+            fbs=0
     # code for prediction
     heart_dig = ''
     
@@ -381,27 +382,27 @@ if selected == 'Hepatitis prediction':  # pagetitle
         elif value == "female":
             sex = 1
     with col3:
-        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin >  ") # 3
+        Total_Bilirubin = st.number_input("Entre your Total_Bilirubin") # 3
     with col1:
-        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin >  ")# 4
+        Direct_Bilirubin = st.number_input("Entre your Direct_Bilirubin")# 4
 
     with col2:
-        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase >  ") # 5
+        Alkaline_Phosphotase = st.number_input("Entre your Alkaline_Phosphotase") # 5
     with col3:
-        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase >  ") # 6
+        Alamine_Aminotransferase = st.number_input("Entre your Alamine_Aminotransferase") # 6
     with col1:
-        Aspartate_Aminotransferase = st.number_input("Entre your Aspartate_Aminotransferase >  ") # 7
+        Aspartate_Aminotransferase = st.number_input("Entre your Aspartate_Aminotransferase") # 7
     with col2:
-        Total_Protiens = st.number_input("Entre your Total_Protiens >  ")# 8
+        Total_Protiens = st.number_input("Entre your Total_Protiens")# 8
     with col3:
-        Albumin = st.number_input("Entre your Albumin >  ") # 9
+        Albumin = st.number_input("Entre your Albumin") # 9
     with col1:
-        Albumin_and_Globulin_Ratio = st.number_input("Entre your Albumin_and_Globulin_Ratio >  ") # 10 
+        Albumin_and_Globulin_Ratio = st.number_input("Entre your Albumin_and_Globulin_Ratio") # 10 
     # code for prediction
     hepatitis_dig = ''
 
     # button
-    if st.button("Liver test result"):
+    if st.button("Hepatitis test result"):
         hepatitis_prediction=[[]]
         hepatitis_prediction = hepatitis_model.predict([[age,sex,Total_Bilirubin,Direct_Bilirubin,Alkaline_Phosphotase,Alamine_Aminotransferase,Aspartate_Aminotransferase,Total_Protiens,Albumin,Albumin_and_Globulin_Ratio]])
 
@@ -462,7 +463,7 @@ if selected == 'Jaundice prediction':  # pagetitle
     jaundice_dig = ''
 
     # button
-    if st.button("jaundice test result"):
+    if st.button("Jaundice test result"):
         jaundice_prediction=[[]]
         jaundice_prediction = jaundice_model.predict([[age,Sex,Total_Bilirubin,Direct_Bilirubin,Alkaline_Phosphotase,Alamine_Aminotransferase,Total_Protiens,Albumin]])
 
