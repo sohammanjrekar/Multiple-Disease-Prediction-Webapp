@@ -13,9 +13,10 @@
 
 ### Deployment Steps
 Please follow the below steps to run this project.
-1.pip install -r requirements.txt
-2. cd frontend
-3. streamlit run multiple_disease_prediction.py
+<br>
+1.pip install -r requirements.txt<br>
+2. cd frontend<br>
+3. streamlit run multiple_disease_prediction.py<br><br>
 
 
 ### Subject Details
@@ -30,7 +31,7 @@ Please follow the below steps to run this project.
 
 ### Dataset Used
 1. [Diabetes disease dataset](https://www.kaggle.com/datasets/mathchi/diabetes-data-set/data)
-2. [Heart disease dataset](https://www.kaggle.com/datasets/rishidamarla/heart-disease-prediction/data)\
+2. [Heart disease dataset](https://www.kaggle.com/datasets/rishidamarla/heart-disease-prediction/data)
 3. [Parkinsons disease dataset](https://www.kaggle.com/code/arunkumarpyramid/detection-parkinson-s-disease/data)
 4. [Liver disease dataset](https://www.kaggle.com/code/harisyammnv/liver-disease-prediction/data)
 5. [Hepatities disease dataset](https://kaggle.com/dataset2)
