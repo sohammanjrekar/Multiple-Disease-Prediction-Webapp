@@ -14,9 +14,9 @@
 ### Deployment Steps
 Please follow the below steps to run this project.
 <br>
-1.pip install -r requirements.txt<br>
-2. cd frontend<br>
-3. streamlit run multiple_disease_prediction.py<br><br>
+1. `pip install -r requirements.txt`<br>
+2. `cd frontend`<br>
+3. `streamlit run multiple_disease_prediction.py`<br><br>
 
 
 ### Subject Details
@@ -36,6 +36,11 @@ Please follow the below steps to run this project.
 4. [Liver disease dataset](https://www.kaggle.com/code/harisyammnv/liver-disease-prediction/data)
 5. [Hepatities disease dataset](https://kaggle.com/dataset2)
 6. [Jaundice disease dataset](https://kaggle.com/dataset2)
+   
+
+### Trailer
+https://github.com/sohammanjrekar/rcoe22-sem5-group2/assets/83022701/b63635ef-3195-4282-9e90-0b05c659fbcc
+
 
 ### References
 - [1] Priyanka Sonar, Prof. K. Jaya Malini,” DIABETES PREDICTION USING DIFFERENT MACHINE LEARNING APPROACHES”, 2019 IEEE ,3rd International Conference on Computing Methodologies and Communication (ICCMC) 
