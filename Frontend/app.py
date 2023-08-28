@@ -17,12 +17,14 @@ import matplotlib.pyplot as plt
 
 
 # loading the models
-diabetes_model = pickle.load(open("../models/diabetes_model.sav", "rb"))
-heart_model = pickle.load(open("../models/heart_disease_model.sav", "rb"))
-parkinson_model = pickle.load(open("../models/parkinsons_model.sav", "rb"))
-liver_model = pickle.load(open("../models/liver.sav", "rb"))
-jaundice_model=pickle.load(open("../models/jaundice.sav", "rb"))
-hepatitis_model=pickle.load(open("../models/hepatitis.sav", "rb"))
+diabetes_model = pickle.load(open("models/diabetes_model.sav", "rb"))
+heart_model = pickle.load(open("models/heart_disease_model.sav", "rb"))
+parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
+liver_model = pickle.load(open("models/liver.sav", "rb"))
+jaundice_model = pickle.load(open("models/jaundice.sav", "rb"))
+hepatities_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
+
+
 
 
 
