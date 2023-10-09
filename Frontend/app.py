@@ -23,6 +23,9 @@ parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
 # liver_model = pickle.load(open("models/liver.sav", "rb"))
 # jaundice_model = pickle.load(open("models/jaundice.sav", "rb"))
 # hepatities_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
+# lung_cancer_model=pickle.load(open("models/lung_model.sav", "rb"))
+# Chronic_model = pickle.load(open("models/chronic_model.sav", "rb"))
+# Breast_Cancer_model = pickle.load(open("models/breast_cancer_model.sav", "rb"))
 
 
 
@@ -32,22 +35,59 @@ parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction', [
         'Disease Prediction',
-        'Diabetes prediction',
-        'Heart disease prediction',
-        'Parkison prediction',
+        'Diabetes Prediction',
+        'Heart disease Prediction',
+        'Parkison Prediction',
         'Liver prediction',
         'Jaundice prediction',
         'Hepatitis prediction',
-        'Dashboard',
-        'Blogs'
+        'Lung Cancer Prediction',
+        'Chronic Kidney prediction',
+        'Breast Cancer Prediction',
+
     ],
         icons=['','activity', 'heart', 'person','person','person','person','bar-chart-fill'],
         default_index=0)
 
 
 
+
+# multiple disease prediction
+if selected == 'Disease Prediction': 
+    # Create disease class and load ML model
+    disease_model = DiseaseModel()
+    disease_model.load_xgboost('model/xgboost_model.json')
+
+    # Title
+    st.write('# Disease Prediction using Machine Learning')
+
+    symptoms = st.multiselect('What are your symptoms?', options=disease_model.all_symptoms)
+
+    X = prepare_symptoms_array(symptoms)
+
+    # Trigger XGBoost model
+    if st.button('Predict'): 
+        # Run the model with the python script
+        
+        prediction, prob = disease_model.predict(X)
+        st.write(f'## Disease: {prediction} with {prob*100:.2f}% probability')
+
+
+        tab1, tab2= st.tabs(["Description", "Precautions"])
+
+        with tab1:
+            st.write(disease_model.describe_predicted_disease())
+
+        with tab2:
+            precautions = disease_model.predicted_disease_precautions()
+            for i in range(4):
+                st.write(f'{i+1}. {precautions[i]}')
+
+
+
+
 # Diabetes prediction page
-if selected == 'Diabetes prediction':  # pagetitle
+if selected == 'Diabetes Prediction':  # pagetitle
     st.title("Diabetes disease prediction")
     image = Image.open('d3.jpg')
     st.image(image, caption='diabetes disease prediction')
@@ -99,8 +139,11 @@ if selected == 'Diabetes prediction':  # pagetitle
         st.success(name+' , ' + diabetes_dig)
         
         
+
+
+
 # Heart prediction page
-if selected == 'Heart disease prediction':
+if selected == 'Heart disease Prediction':
     st.title("Heart disease prediction")
     image = Image.open('heart2.jpg')
     st.image(image, caption='heart failuire')
@@ -224,7 +267,9 @@ if selected == 'Heart disease prediction':
 
 
 
-if selected == 'Parkison prediction':
+
+
+if selected == 'Parkison Prediction':
     st.title("Parkison prediction")
     image = Image.open('p1.jpg')
     st.image(image, caption='parkinsons disease')
@@ -301,8 +346,13 @@ if selected == 'Parkison prediction':
         st.success(name+' , ' + parkinson_dig)
 
 
+
+
+
+
+
 # Liver prediction page
-if selected == 'Liver prediction':  # pagetitle
+if selected == 'Liver Prediction':  # pagetitle
     st.title("Liver disease prediction")
     image = Image.open('liver.jpg')
     st.image(image, caption='Liver disease prediction.')
@@ -483,44 +533,124 @@ if selected == 'Jaundice prediction':  # pagetitle
 
 
 
-# multiple disease prediction
-if selected == 'Disease Prediction': 
-    # Create disease class and load ML model
-    disease_model = DiseaseModel()
-    disease_model.load_xgboost('model/xgboost_model.json')
 
-    # Title
-    st.write('# Disease Prediction using Machine Learning')
 
-    symptoms = st.multiselect('What are your symptoms?', options=disease_model.all_symptoms)
 
-    X = prepare_symptoms_array(symptoms)
 
-    # Trigger XGBoost model
-    if st.button('Predict'): 
-        # Run the model with the python script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Load the lung cancer prediction model
+lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
+
+# Load the dataset
+lung_cancer_data = pd.read_csv('data/lung_cancer.csv')
+
+# Convert 'M' to 0 and 'F' to 1 in the 'GENDER' column
+lung_cancer_data['GENDER'] = lung_cancer_data['GENDER'].map({'M': 0, 'F': 1})
+
+# Convert 'Age' column to numeric
+lung_cancer_data['AGE'] = pd.to_numeric(lung_cancer_data['AGE'], errors='coerce')
+
+# Lung Cancer prediction page
+if selected == 'Lung Cancer Prediction':
+    st.title("Lung Cancer Prediction")
+    image = Image.open('h.png')
+    st.image(image, caption='Lung Cancer Prediction')
+
+    # Columns
+    # No inputs from the user
+    name = st.text_input("Name:")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        gender = st.selectbox("Gender:", lung_cancer_data['GENDER'].unique())
+    with col2:
+        age = st.number_input("Age")
+    with col3:
+        smoking = st.selectbox("Smoking:", lung_cancer_data['SMOKING'].unique())
+    with col1:
+        yellow_fingers = st.selectbox("Yellow Fingers:", lung_cancer_data['YELLOW_FINGERS'].unique())
+
+    with col2:
+        anxiety = st.selectbox("Anxiety:", lung_cancer_data['ANXIETY'].unique())
+    with col3:
+        peer_pressure = st.selectbox("Peer Pressure:", lung_cancer_data['PEER_PRESSURE'].unique())
+    with col1:
+        chronic_disease = st.selectbox("Chronic Disease:", lung_cancer_data['CHRONIC DISEASE'].unique())
+
+    with col2:
+        fatigue = st.selectbox("Fatigue:", lung_cancer_data['FATIGUE '].unique())
+    with col3:
+        allergy = st.selectbox("Allergy:", lung_cancer_data['ALLERGY '].unique())
+    with col1:
+        wheezing = st.selectbox("Wheezing:", lung_cancer_data['WHEEZING'].unique())
+
+    with col2:
+        alcohol_consuming = st.selectbox("Alcohol Consuming:", lung_cancer_data['ALCOHOL CONSUMING'].unique())
+    with col3:
+        coughing = st.selectbox("Coughing:", lung_cancer_data['COUGHING'].unique())
+    with col1:
+        shortness_of_breath = st.selectbox("Shortness of Breath:", lung_cancer_data['SHORTNESS OF BREATH'].unique())
+
+    with col2:
+        swallowing_difficulty = st.selectbox("Swallowing Difficulty:", lung_cancer_data['SWALLOWING DIFFICULTY'].unique())
+    with col3:
+        chest_pain = st.selectbox("Chest Pain:", lung_cancer_data['CHEST PAIN'].unique())
+
+        # Code for prediction
+    cancer_result = ''
+
+    # Button
+    if st.button("Predict Lung Cancer"):
+        # Create a DataFrame with user inputs
+        # Create a DataFrame with user inputs
+        user_data = pd.DataFrame({
+            'GENDER': [gender],
+            'AGE': [age],
+            'SMOKING': [smoking],
+            'YELLOW_FINGERS': [yellow_fingers],
+            'ANXIETY': [anxiety],
+            'PEER_PRESSURE': [peer_pressure],
+            'CHRONIC DISEASE': [chronic_disease],
+            'FATIGUE ': [fatigue],
+            'ALLERGY ': [allergy],
+            'WHEEZING': [wheezing],
+            'ALCOHOL CONSUMING': [alcohol_consuming],
+            'COUGHING': [coughing],
+            'SHORTNESS OF BREATH': [shortness_of_breath],
+            'SWALLOWING DIFFICULTY': [swallowing_difficulty],
+            'CHEST PAIN': [chest_pain]
+        })
+
         
-        prediction, prob = disease_model.predict(X)
-        st.write(f'## Disease: {prediction} with {prob*100:.2f}% probability')
 
+        # Convert columns to numeric where necessary
+        numeric_columns = ['AGE', 'FATIGUE ', 'ALLERGY ', 'ALCOHOL CONSUMING', 'COUGHING', 'SHORTNESS OF BREATH']
+        user_data[numeric_columns] = user_data[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-        tab1, tab2= st.tabs(["Description", "Precautions"])
+        # Perform prediction
+        cancer_prediction = lung_cancer_model.predict(user_data)
 
-        with tab1:
-            st.write(disease_model.describe_predicted_disease())
-
-        with tab2:
-            precautions = disease_model.predicted_disease_precautions()
-            for i in range(4):
-                st.write(f'{i+1}. {precautions[i]}')
-
-
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    main()
+        # Display result
+        if cancer_prediction[0] == 'YES':
+            cancer_result = "The model predicts that there is a risk of Lung Cancer."
+            image = Image.open('positive.jpg')
+            st.image(image, caption='')
+        else:
+            cancer_result = "The model predicts no significant risk of Lung Cancer."
+            image = Image.open('negative.jpg')
+            st.image(image, caption='')
+        st.success(name + ', ' + cancer_result)
