@@ -14,13 +14,13 @@ from code.DiseaseModel import DiseaseModel
 from code.helper import prepare_symptoms_array
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import joblib
 
 # loading the models
 diabetes_model = pickle.load(open("models/diabetes_model.sav", "rb"))
 heart_model = pickle.load(open("models/heart_disease_model.sav", "rb"))
 parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
-# liver_model = pickle.load(open("models/liver.sav", "rb"))
+liver_model = joblib.load(open("models/liver.sav", "rb"))
 # jaundice_model = pickle.load(open("models/jaundice.sav", "rb"))
 # hepatities_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
 # lung_cancer_model=pickle.load(open("models/lung_model.sav", "rb"))
@@ -344,6 +344,8 @@ if selected == 'Parkison Prediction':
             image = Image.open('negative.jpg')
             st.image(image, caption='')
         st.success(name+' , ' + parkinson_dig)
+
+
 
 
 
