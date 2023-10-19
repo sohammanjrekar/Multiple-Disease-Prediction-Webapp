@@ -20,16 +20,6 @@ import joblib
 diabetes_model = pickle.load(open("models/diabetes_model.sav", "rb"))
 heart_model = pickle.load(open("models/heart_disease_model.sav", "rb"))
 parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
-#liver_model = joblib.load(open("models/liver.sav", "rb"))
-# jaundice_model = pickle.load(open("models/jaundice.sav", "rb"))
-hepatities_model = joblib.load(open("models/hepititisc_model.sav", "rb"))
-lung_cancer_model=joblib.load(open("models/lung_cancer_model.sav", "rb"))
-# Chronic_model = pickle.load(open("models/chronic_model.sav", "rb"))
-# Breast_Cancer_model = pickle.load(open("models/breast_cancer_model.sav", "rb"))
-
-
-
-
 
 # sidebar
 with st.sidebar:
