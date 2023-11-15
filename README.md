@@ -8,8 +8,6 @@
 3. KHAN MUZAFFAR MOHAMMAD SOAIB 
 4. JAMADAR DANISH RASHID 
 
-### Project Guides
-1. PROF. MOHAMMED JUNED   [ Primary Guide ] 
 
 ### Deployment Steps
 Please follow the below steps to run this project.
@@ -18,11 +16,6 @@ Please follow the below steps to run this project.
 2. `cd frontend`<br>
 3. `streamlit run multiple_disease_prediction.py`<br><br>
 
-
-### Subject Details
-- Class : TE (COMP) Div A - 2022-2023
-- Subject : Mini Project : 2A (MP2A(P)(2019))
-- Project Type : Mini Project
 
 ### Platform, Libraries and Frameworks used
 1. [Streamlit](https://docs.streamlit.io/library/get-started)
