@@ -17,9 +17,25 @@ import matplotlib.pyplot as plt
 import joblib
 
 # loading the models
-diabetes_model = pickle.load(open("models/diabetes_model.sav", "rb"))
-heart_model = pickle.load(open("models/heart_disease_model.sav", "rb"))
-parkinson_model = pickle.load(open("models/parkinsons_model.sav", "rb"))
+diabetes_model = joblib.load("models/diabetes_model.sav")
+heart_model = joblib.load("models/heart_disease_model.sav")
+parkinson_model = joblib.load("models/parkinsons_model.sav")
+# Load the lung cancer prediction model
+lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
+
+# Load the pre-trained model
+breast_cancer_model = joblib.load('models/breast_cancer.sav')
+
+# Load the pre-trained model
+chronic_disease_model = joblib.load('models/chronic_model.sav')
+
+# Load the hepatitis prediction model
+hepatitis_model = joblib.load('models/hepititisc_model.sav')
+
+
+liver_model = joblib.load('models/liver_model.sav')# Load the lung cancer prediction model
+lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
+
 
 # sidebar
 with st.sidebar:
@@ -335,8 +351,6 @@ if selected == 'Parkison Prediction':
         st.success(name+' , ' + parkinson_dig)
 
 
-# Load the lung cancer prediction model
-lung_cancer_model = joblib.load('models/lung_cancer_model.sav')
 
 # Load the dataset
 lung_cancer_data = pd.read_csv('data/lung_cancer.csv')
@@ -442,8 +456,6 @@ if selected == 'Lung Cancer Prediction':
 
 
 
-liver_model = joblib.load('models/liver_model.sav')
-
 # Liver prediction page
 if selected == 'Liver prediction':  # pagetitle
     st.title("Liver disease prediction")
@@ -507,8 +519,6 @@ if selected == 'Liver prediction':  # pagetitle
 
 
 
-# Load the hepatitis prediction model
-hepatitis_model = joblib.load('models/hepititisc_model.sav')
 # Hepatitis prediction page
 if selected == 'Hepatitis prediction':
     st.title("Hepatitis Prediction")
@@ -660,13 +670,9 @@ if selected == 'Jaundice prediction':  # pagetitle
 
 
 
-
-chronic_disease_model = joblib.load('models/chronic_model.sav')
 from sklearn.preprocessing import LabelEncoder
 import joblib
 
-# Load the pre-trained model
-chronic_disease_model = joblib.load('models/chronic_model.sav')
 
 # Chronic Kidney Disease Prediction Page
 if selected == 'Chronic Kidney prediction':
@@ -790,8 +796,6 @@ if selected == 'Chronic Kidney prediction':
         st.success(name+' , ' + kidney_prediction_dig)
 
 
-# Load the pre-trained model
-breast_cancer_model = joblib.load('models/breast_cancer.sav')
 
 # Breast Cancer Prediction Page
 if selected == 'Breast Cancer Prediction':
