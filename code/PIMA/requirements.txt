@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+xgboost
+catboost
+optuna
+imbalanced-learn
+joblib
+pyyaml
+matplotlib
+seaborn
+reportlab
+category_encoders
+scipy

@@ -1,0 +1,12 @@
+data_path: "pima_diabetes.csv"
+target: "Outcome"
+test_size: 0.2
+random_state: 42
+cv_folds: 5
+nested_cv_folds: 3
+top_n: 4
+n_trials: 30
+artifact_dir: "artifacts"
+use_gpu: false
+save_pickle: true
+report_pdf_name: "model_report.pdf"
