@@ -1,0 +1,537 @@
+{
+    "Fungal infection": {
+      "foods_to_eat": [
+        "Yogurt (probiotics)", 
+        "Garlic", 
+        "Coconut oil", 
+        "Green leafy vegetables", 
+        "Turmeric"
+      ],
+      "foods_to_avoid": [
+        "Sugar", 
+        "Refined carbohydrates", 
+        "Processed foods", 
+        "Excess dairy", 
+        "Alcohol"
+      ],
+      "lifestyle_tips": [
+        "Maintain good hygiene",
+        "Wear breathable fabrics",
+        "Avoid damp environments",
+        "Boost immune system with a balanced diet"
+      ]
+    },
+    "Allergy": {
+      "foods_to_eat": [
+        "Vitamin C-rich foods (oranges, bell peppers)", 
+        "Ginger", 
+        "Turmeric", 
+        "Leafy greens", 
+        "Omega-3 rich foods (salmon, flaxseeds)"
+      ],
+      "foods_to_avoid": [
+        "Processed foods", 
+        "Dairy (if allergic)", 
+        "Shellfish (if allergic)", 
+        "Soy (if allergic)", 
+        "Artificial preservatives"
+      ],
+      "lifestyle_tips": [
+        "Identify and avoid allergens",
+        "Use an air purifier",
+        "Stay hydrated",
+        "Boost immunity with natural foods"
+      ]
+    },
+    "GERD": {
+      "foods_to_eat": [
+        "Oatmeal", 
+        "Bananas", 
+        "Ginger", 
+        "Lean meats (chicken, turkey)", 
+        "Non-citrus fruits"
+      ],
+      "foods_to_avoid": [
+        "Spicy foods", 
+        "Caffeine", 
+        "Chocolate", 
+        "Fried foods", 
+        "Tomato-based products"
+      ],
+      "lifestyle_tips": [
+        "Eat smaller meals",
+        "Do not lie down immediately after eating",
+        "Avoid late-night meals",
+        "Wear loose-fitting clothes",
+        "Elevate the head of your bed"
+      ]
+    },
+    "Chronic cholestasis": {
+      "foods_to_eat": [
+        "Leafy greens", 
+        "Beetroot", 
+        "Turmeric", 
+        "Low-fat dairy", 
+        "Olive oil"
+      ],
+      "foods_to_avoid": [
+        "Fatty foods", 
+        "Alcohol", 
+        "Spicy foods", 
+        "Processed foods", 
+        "Excess salt"
+      ],
+      "lifestyle_tips": [
+        "Maintain a low-fat diet",
+        "Exercise regularly",
+        "Avoid alcohol",
+        "Stay hydrated"
+      ]
+    },
+    "Drug Reaction": {
+      "foods_to_eat": [
+        "Vitamin C-rich foods", 
+        "Omega-3 fatty acids", 
+        "Probiotic foods", 
+        "Ginger", 
+        "Turmeric"
+      ],
+      "foods_to_avoid": [
+        "Alcohol", 
+        "Spicy foods", 
+        "Excess caffeine", 
+        "Processed foods"
+      ],
+      "lifestyle_tips": [
+        "Always follow prescribed dosage",
+        "Avoid self-medication",
+        "Drink plenty of water",
+        "Consult a doctor if symptoms worsen"
+      ]
+    },
+    "Peptic ulcer disease": {
+      "foods_to_eat": [
+        "Bananas", 
+        "Leafy greens", 
+        "Honey", 
+        "Cabbage juice", 
+        "Whole grains"
+      ],
+      "foods_to_avoid": [
+        "Spicy foods", 
+        "Caffeine", 
+        "Acidic foods", 
+        "Alcohol", 
+        "Smoking"
+      ],
+      "lifestyle_tips": [
+        "Avoid stress",
+        "Eat smaller, frequent meals",
+        "Do not skip meals",
+        "Quit smoking"
+      ]
+    },
+    "AIDS": {
+      "foods_to_eat": [
+        "Protein-rich foods", 
+        "Fruits and vegetables", 
+        "Nuts and seeds", 
+        "Whole grains", 
+        "Probiotic foods"
+      ],
+      "foods_to_avoid": [
+        "Raw or undercooked food", 
+        "Unpasteurized dairy", 
+        "Processed foods", 
+        "Excess sugar"
+      ],
+      "lifestyle_tips": [
+        "Practice good hygiene",
+        "Follow ART medication properly",
+        "Stay active",
+        "Maintain a balanced diet"
+      ]
+    },
+    "Diabetes": {
+      "foods_to_eat": [
+        "Leafy greens", 
+        "Whole grains", 
+        "Nuts and seeds", 
+        "Lean proteins", 
+        "Low-fat dairy"
+      ],
+      "foods_to_avoid": [
+        "Sugary drinks", 
+        "White bread", 
+        "Fried foods", 
+        "Processed snacks"
+      ],
+      "lifestyle_tips": [
+        "Exercise regularly",
+        "Monitor blood sugar levels",
+        "Eat fiber-rich foods",
+        "Avoid excessive alcohol"
+      ]
+    },
+    "Malaria": {
+      "foods_to_eat": [
+        "Coconut water", 
+        "Papaya leaves juice", 
+        "Fruits rich in vitamin C", 
+        "Leafy greens", 
+        "Protein-rich foods"
+      ],
+      "foods_to_avoid": [
+        "Heavy, oily foods", 
+        "Junk food", 
+        "Carbonated drinks", 
+        "Excess caffeine"
+      ],
+      "lifestyle_tips": [
+        "Use mosquito nets",
+        "Keep surroundings clean",
+        "Drink plenty of fluids",
+        "Take prescribed medication"
+      ]
+    },
+    "Typhoid": {
+      "foods_to_eat": [
+        "Boiled potatoes", 
+        "White rice", 
+        "Bananas", 
+        "Lentil soup", 
+        "Coconut water"
+      ],
+      "foods_to_avoid": [
+        "Spicy foods", 
+        "Raw vegetables", 
+        "Fatty foods", 
+        "Excess dairy"
+      ],
+      "lifestyle_tips": [
+        "Drink only boiled or purified water",
+        "Eat home-cooked meals",
+        "Rest properly",
+        "Complete antibiotic course"
+      ]
+    },
+    "Common Cold": {
+      "foods_to_eat": [
+        "Ginger tea", 
+        "Citrus fruits", 
+        "Honey", 
+        "Chicken soup", 
+        "Garlic"
+      ],
+      "foods_to_avoid": [
+        "Cold beverages", 
+        "Sugary foods", 
+        "Fried foods", 
+        "Dairy (may increase mucus)"
+      ],
+      "lifestyle_tips": [
+        "Stay hydrated",
+        "Get plenty of rest",
+        "Use steam inhalation",
+        "Wash hands frequently"
+      ]
+    },
+
+    
+        "Pneumonia": {
+          "foods_to_eat": [
+            "Warm soups", 
+            "Honey", 
+            "Garlic", 
+            "Leafy greens", 
+            "Citrus fruits"
+          ],
+          "foods_to_avoid": [
+            "Dairy (may increase mucus)", 
+            "Cold drinks", 
+            "Fried foods", 
+            "Processed meats"
+          ],
+          "lifestyle_tips": [
+            "Stay hydrated",
+            "Rest properly",
+            "Avoid smoking",
+            "Use a humidifier for easier breathing"
+          ]
+        },
+        "Dimorphic hemmorhoids(piles)": {
+          "foods_to_eat": [
+            "High-fiber foods", 
+            "Whole grains", 
+            "Leafy greens", 
+            "Plenty of water", 
+            "Fruits like papaya and bananas"
+          ],
+          "foods_to_avoid": [
+            "Spicy foods", 
+            "Red meat", 
+            "Alcohol", 
+            "Processed foods"
+          ],
+          "lifestyle_tips": [
+            "Avoid straining during bowel movements",
+            "Exercise regularly",
+            "Stay hydrated",
+            "Use warm sitz baths"
+          ]
+        },
+        "Heart attack": {
+          "foods_to_eat": [
+            "Leafy greens", 
+            "Berries", 
+            "Fatty fish", 
+            "Whole grains", 
+            "Nuts and seeds"
+          ],
+          "foods_to_avoid": [
+            "Fried foods", 
+            "Sugary drinks", 
+            "Excess salt", 
+            "Red meat"
+          ],
+          "lifestyle_tips": [
+            "Exercise regularly",
+            "Manage stress levels",
+            "Avoid smoking and alcohol",
+            "Follow a heart-healthy diet"
+          ]
+        },
+        "Varicose veins": {
+          "foods_to_eat": [
+            "Leafy greens", 
+            "Citrus fruits", 
+            "Whole grains", 
+            "Berries", 
+            "Nuts and seeds"
+          ],
+          "foods_to_avoid": [
+            "High-sodium foods", 
+            "Processed foods", 
+            "Refined sugar", 
+            "Alcohol"
+          ],
+          "lifestyle_tips": [
+            "Avoid prolonged sitting or standing",
+            "Exercise regularly",
+            "Wear compression stockings",
+            "Elevate legs when resting"
+          ]
+        },
+        "Hypothyroidism": {
+          "foods_to_eat": [
+            "Iodine-rich foods (seaweed, dairy)", 
+            "Whole grains", 
+            "Leafy greens", 
+            "Brazil nuts", 
+            "Lean proteins"
+          ],
+          "foods_to_avoid": [
+            "Soy-based foods", 
+            "Excess sugar", 
+            "Processed foods", 
+            "Raw cruciferous vegetables (in excess)"
+          ],
+          "lifestyle_tips": [
+            "Take prescribed medication on time",
+            "Exercise regularly",
+            "Manage stress",
+            "Get enough sleep"
+          ]
+        },
+        "Hyperthyroidism": {
+          "foods_to_eat": [
+            "Cruciferous vegetables (broccoli, cauliflower)", 
+            "Whole grains", 
+            "Nuts and seeds", 
+            "Dairy products"
+          ],
+          "foods_to_avoid": [
+            "Iodine-rich foods", 
+            "Caffeine", 
+            "Excess sugar", 
+            "Spicy foods"
+          ],
+          "lifestyle_tips": [
+            "Avoid stress",
+            "Exercise gently (yoga, walking)",
+            "Get enough sleep",
+            "Follow a balanced diet"
+          ]
+        },
+        "Hypoglycemia": {
+          "foods_to_eat": [
+            "Complex carbohydrates", 
+            "Whole grains", 
+            "Nuts", 
+            "Lean proteins", 
+            "Low-fat dairy"
+          ],
+          "foods_to_avoid": [
+            "Sugary drinks", 
+            "Processed foods", 
+            "Excess caffeine", 
+            "Refined carbs"
+          ],
+          "lifestyle_tips": [
+            "Eat small frequent meals",
+            "Avoid skipping meals",
+            "Monitor blood sugar regularly",
+            "Keep a healthy snack handy"
+          ]
+        },
+        "Osteoarthritis": {
+          "foods_to_eat": [
+            "Leafy greens", 
+            "Berries", 
+            "Omega-3 rich foods", 
+            "Whole grains", 
+            "Turmeric"
+          ],
+          "foods_to_avoid": [
+            "Processed foods", 
+            "Excess sugar", 
+            "Fried foods", 
+            "Red meat"
+          ],
+          "lifestyle_tips": [
+            "Maintain a healthy weight",
+            "Exercise gently (swimming, yoga)",
+            "Use heat and cold therapy",
+            "Take prescribed medication"
+          ]
+        },
+        "Arthritis": {
+          "foods_to_eat": [
+            "Fatty fish", 
+            "Leafy greens", 
+            "Turmeric", 
+            "Whole grains", 
+            "Berries"
+          ],
+          "foods_to_avoid": [
+            "Fried foods", 
+            "Refined sugar", 
+            "Processed foods", 
+            "Excess dairy"
+          ],
+          "lifestyle_tips": [
+            "Stay active with low-impact exercises",
+            "Maintain a healthy weight",
+            "Use hot/cold therapy",
+            "Get enough vitamin D"
+          ]
+        },
+        "(vertigo) Paroxysmal Positional Vertigo": {
+          "foods_to_eat": [
+            "Ginger tea", 
+            "Leafy greens", 
+            "Whole grains", 
+            "Vitamin D-rich foods", 
+            "Hydrating fluids"
+          ],
+          "foods_to_avoid": [
+            "Caffeine", 
+            "Alcohol", 
+            "Salty foods", 
+            "Processed foods"
+          ],
+          "lifestyle_tips": [
+            "Avoid sudden head movements",
+            "Stay hydrated",
+            "Perform balance exercises",
+            "Reduce stress levels"
+          ]
+        },
+        "Acne": {
+          "foods_to_eat": [
+            "Leafy greens", 
+            "Berries", 
+            "Nuts and seeds", 
+            "Whole grains", 
+            "Probiotic-rich foods"
+          ],
+          "foods_to_avoid": [
+            "Dairy (if acne-prone)", 
+            "Excess sugar", 
+            "Fried foods", 
+            "Refined carbs"
+          ],
+          "lifestyle_tips": [
+            "Drink plenty of water",
+            "Keep skin clean",
+            "Reduce stress",
+            "Use non-comedogenic skincare products"
+          ]
+        },
+        "Urinary tract infection": {
+          "foods_to_eat": [
+            "Cranberry juice", 
+            "Probiotic foods", 
+            "Water-rich fruits (watermelon, cucumber)", 
+            "Whole grains", 
+            "Vitamin C-rich foods"
+          ],
+          "foods_to_avoid": [
+            "Caffeine", 
+            "Alcohol", 
+            "Spicy foods", 
+            "Sugary drinks"
+          ],
+          "lifestyle_tips": [
+            "Drink plenty of water",
+            "Practice good hygiene",
+            "Urinate frequently",
+            "Wear loose, breathable clothing"
+          ]
+        },
+        "Psoriasis": {
+          "foods_to_eat": [
+            "Omega-3 rich foods", 
+            "Leafy greens", 
+            "Turmeric", 
+            "Whole grains", 
+            "Nuts and seeds"
+          ],
+          "foods_to_avoid": [
+            "Processed foods", 
+            "Excess alcohol", 
+            "Fried foods", 
+            "Dairy (if sensitive)"
+          ],
+          "lifestyle_tips": [
+            "Keep skin moisturized",
+            "Avoid excessive sun exposure",
+            "Manage stress",
+            "Follow a balanced diet"
+          ]
+        },
+        "Impetigo": {
+          "foods_to_eat": [
+            "Probiotic foods", 
+            "Leafy greens", 
+            "Garlic", 
+            "Vitamin C-rich fruits", 
+            "Whole grains"
+          ],
+          "foods_to_avoid": [
+            "Excess sugar", 
+            "Processed foods", 
+            "Dairy (if sensitive)", 
+            "Junk food"
+          ],
+          "lifestyle_tips": [
+            "Practice good hygiene",
+            "Avoid scratching affected areas",
+            "Use prescribed medications",
+            "Boost immunity with a healthy diet"
+          ]
+        }
+      }
+      
+  
+  
